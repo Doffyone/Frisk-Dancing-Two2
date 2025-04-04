@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0; /* Remove margens padrão do body */
+            height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+            display: flex; /* Usa Flexbox */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+        /*div#area {
+            background-color: rgb(0, 143, 43);
+            color:aliceblue;
+            font: normal 20pt Arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }*/
+        img#Freskar {
+            width: 250px;
+            height: 370px;
+            max-width: 100%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="area">
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        /*a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)*/
+        let audio = new Audio('youtube_o0tky2O8NlY_audio.mp3');
+
+        /*function clicar() {
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+            audio.play();
+        }
+            function entrar() {
+                a.innerText = 'Entrou!'
+                a.style.background = 'blue'
+            }
+            function sair() {
+                a.innerText = 'Saiu!'
+                a.style.background = 'green'
+                audio.pause();
+            }*/
+    </script>
+    <div id='Fresko'>
+        <img id="Freskar" src="Friska.png" alt="friski">
+    </div>
+    <script>
+        let aud = new Audio('youtube_o0tky2O8NlY_audio.mp3');
+        var fr = window.document.getElementById('Fresko')
+        var friskdefi = window.document.getElementById('Freskar');
+        let = isAnimated = false;
+
+        fr.addEventListener('click', clicar)
+
+        function clicar() {
+            if (!isAnimated) {
+                aud.play();
+                friskdefi.src = 'Frisk.gif';
+                isAnimated = true;
+            } else {
+                friskdefi.src = 'Friska.png';
+                aud.pause();
+                isAnimated = false;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
